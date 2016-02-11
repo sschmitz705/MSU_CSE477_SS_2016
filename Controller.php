@@ -12,8 +12,8 @@ class WumpusController
      * @param Wumpus $wumpus The Wumpus object
      * @param $request The $_REQUEST array
      */
-    public function __construct(Wumpus $wumpus, $request) {
-        $this->wumpus = $wumpus;
+    public function __construct(Model $model, $request) {
+        $this->model = $model;
         if(isset($request['m'])) {
             $this->move($request['m']);
         } else if(isset($request['s'])) {
