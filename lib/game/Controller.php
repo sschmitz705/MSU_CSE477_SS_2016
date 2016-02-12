@@ -34,20 +34,10 @@ class Controller{
     public function getPage() {
         return $this->page;
     }
-
-    /**
-     * Get reference to a page
-     * @return Page object
-     */
     public function isReset() {
         return $this->reset;
     }
-    public function isCheat() {
-        return $this->cheat;
-    }
 
-    /** rotates request
-     * @param $ndx Index for room to move to */
     private function rotates($rl) {
         // Simple error check
         if($rl!="r" || $rl!="l") {
