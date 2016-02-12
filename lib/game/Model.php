@@ -6,44 +6,38 @@
  * Date: 2/11/2016
  * Time: 2:57 PM
  */
-class Model
-{
+class Model{
     /**
      * Constructor
      * @param $seed Random number seed
      */
-    public function __construct($seed = null)
-    {
+    private $st;
+    private $end;
+    private $grid;
+    public function __construct($seed = null){
 
     }
-
-    /**
-     * Create game of desired size
-     * @param $size Game size
-     */
-    public function createGame($size = 10)
-    {
-        $this->size = $size;
+    public function getst($p){
+        return $this->st;
     }
-
-    /**
-     * Get size
-     * @return $size Game size
-     */
-    public function getSize()
-    {
-        return $this->size;
+    public function getend($p){
+        return $this->end;
     }
-
-    /**
-     * Keep track of current player turn
-     * @return $size Game size
-     */
-    public function curTurn()
-    {
-
+    public function hover($p){
+        //retruns the square to be highlighted
+        return $this->end;
     }
-
-
-    private $size = 0;    // Game size
+    public function place(type,loc){
+        if(stream at end ){
+            $this->grid[loc]=type;
+            $this->steam_update();
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    public function steam_update(){
+        //calculates whre the steam is coming out
+    }
 }
