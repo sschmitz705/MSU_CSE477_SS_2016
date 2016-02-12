@@ -12,17 +12,18 @@ class Controller{
      */
     public function __construct(Model $model, $request) {
         $this->model = $model;
-        if(isset($request['m'])) {
-            $this->move($request['m']);
-        } else if(isset($request['s'])) {
-            $this->shoot($request['s']);
-        } else if(isset($request['n'])) {
+        if(isset($request['p'])) {
+            $this->place($request['p']);
+        } 
+        elseif(isset($request['r'])) {
+            $this->rotate($request['r']);
+        } 
+        elseif(isset($request['h'])) {
+            $this->hover($request['h']);
+        } 
+        else if(isset($request['n'])) {
             // New game!
             $this->reset = true;
-        }
-        else if(isset($request['c'])) {
-            // cheat game!
-            $this->cheat = true;
         }
     }
 
