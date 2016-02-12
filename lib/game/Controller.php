@@ -1,8 +1,6 @@
 <?php
 namespace game;
 class Controller{
-class WumpusController
-{
     private $model;                // The model object we are controlling
     private $page = 'game.php';     // The next page we will go to
     private $reset = false;         // True if we need to reset the game
