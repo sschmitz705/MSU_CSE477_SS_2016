@@ -1,5 +1,5 @@
 <?php
-
+require 'format.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -11,10 +11,7 @@
 </head>
 <body>
 
-<div class="image">
-    <figure><img src="images/title.png" width="500" height="100" alt="Title"/>
-    </figure>
-</div>
+<?php echo present_header("STEAMPUNKED"); ?>
 
 <form>
    <div class="game">
