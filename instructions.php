@@ -1,5 +1,5 @@
 <?php
-
+require 'format.inc.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,10 +10,10 @@
 </head>
 <body>
 
+<?php echo present_header("STEAMPUNKED"); ?>
+
 <div class="main">
     <div class="image">
-        <figure><img src="images/title.png" width="500" height="100" alt="Title"/>
-        </figure>
         <figure><img src="images/steamsplash2.png" width="400" height="400" alt="Game Board"/>
         </figure>
     </div>
